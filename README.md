@@ -43,8 +43,13 @@ I coded 3 python files:
 - ***encrypt.py*** allows you to get a quick encryption of any text you want
 - ***decrypt.py*** allows you to get a quick decryption of any **ROT-S** encrypted text you want
 - ***encrdecr.py*** allows you to either encrypt or decrypt a .txt file.
+- ***tests.py*** allows you to test how quick this method is by using different lenghts of .txt files, going from 100bytes to 100k bytes (you can use your own too). This is WAY quicker than encrdecr.py because it doesn't print every time it ciphers a byte.
+
+## Downloads
 
 You can either **download** each file or you can directly download the .zip with everything [**here**](https://github.com/alessio-ds/ROT-S/raw/main/ROT-S.rar "here")
+
+## Some tests
 
 **Encrypting 250 bytes with 'encrdecr.py':**
 
@@ -52,4 +57,4 @@ You can either **download** each file or you can directly download the .zip with
 
 #### I also took some speed tests:
 
-![](https://i.imgur.com/cIHm820.png)
+![](https://i.imgur.com/wkCxeh0.png)
