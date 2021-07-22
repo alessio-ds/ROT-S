@@ -6,7 +6,7 @@ num='0123456789'
 
 def encrypt(filename):
     start=time.time()
-    with open(filename, mode='r') as f:
+    with open(filename, mode='r', encoding='UTF-8') as f:
         string=f.read()
 
 
@@ -61,7 +61,7 @@ def encrypt(filename):
             else:
                 encr+=e
 
-    with open('encrypted.txt', mode='w') as c:
+    with open('encrypted.txt', mode='w', encoding='UTF-8') as c:
         c.write(encr)
     end=time.time()
     daprintare=str(len(strlist))+' bytes - '+(str(round(end-start, 6)))+'s'
@@ -71,7 +71,7 @@ def encrypt(filename):
 def decrypt(filename):
     start=time.time()
 
-    with open(filename, mode='r') as f:
+    with open(filename, mode='r', encoding='UTF-8') as f:
         string=f.read()
     string=string.lower()
     strlist=[]
@@ -122,7 +122,7 @@ def decrypt(filename):
                 encr+=alphab[add]
             else:
                 encr+=e
-    with open('decrypted.txt', mode='w') as c:
+    with open('decrypted.txt', mode='w', encoding='UTF-8') as c:
         c.write(encr)
 
     end=time.time()
@@ -155,6 +155,8 @@ b7=decrypt('10k_bytes.txt')
 b8=decrypt('25k_bytes.txt')
 b9=decrypt('50k_bytes.txt')
 b10=decrypt('100k_bytes.txt')
+
+print('Done. Check "results.txt".')
 
 testo='ENCRYPT:\n'+a1+'\n'+a2+'\n'+a3+'\n'+a4+'\n'+a5+'\n'+a6+'\n'+a7+'\n'+a8+'\n'+a9+'\n'+a10+'\n\n'+'DECRYPT:\n'+b1+'\n'+b2+'\n'+b3+'\n'+b4+'\n'+b5+'\n'+b6+'\n'+b7+'\n'+b8+'\n'+b9+'\n'+b10
 with open('results.txt', mode='w') as f:
