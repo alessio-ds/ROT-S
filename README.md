@@ -33,7 +33,7 @@ It will also rotate **numbers**:
 
 2 - 2 = **0**
 
-3 + 3 = **3**
+3 + 3 = **6**
 
 **The punctuation is untouched.**
 
