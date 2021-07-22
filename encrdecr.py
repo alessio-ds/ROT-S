@@ -11,7 +11,7 @@ if dom=='E' or dom=='e':
 
     start=time.time()
 
-    with open('decrypted.txt', mode='r') as f:
+    with open('decrypted.txt', mode='r', encoding='UTF-8') as f:
         string=f.read()
 
 
@@ -67,7 +67,7 @@ if dom=='E' or dom=='e':
             else:
                 encr+=e
 
-    with open('encrypted.txt', mode='w') as c:
+    with open('encrypted.txt', mode='w', encoding='UTF-8') as c:
         c.write(encr)
     print('\nDone')
     end=time.time()
@@ -84,7 +84,7 @@ else:
 
         start=time.time()
 
-        with open('encrypted.txt', mode='r') as f:
+        with open('encrypted.txt', mode='r', encoding='UTF-8') as f:
             string=f.read()
         string=string.lower()
         strlist=[]
@@ -136,7 +136,7 @@ else:
                     encr+=alphab[add]
                 else:
                     encr+=e
-        with open('decrypted.txt', mode='w') as c:
+        with open('decrypted.txt', mode='w', encoding='UTF-8') as c:
             c.write(encr)
 
         print('\nDone')
