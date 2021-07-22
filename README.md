@@ -47,7 +47,7 @@ I coded 3 python files:
 
 ## Downloads
 
-You can either **download** each file or you can directly download the .zip with everything [**here**](https://github.com/alessio-ds/ROT-S/raw/main/ROT-S.rar "here")
+You can either **download** each file or you can directly download the .zip with everything [**here**](https://github.com/alessio-ds/ROT-S/releases "here")
 
 ## Some tests
 
