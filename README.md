@@ -49,12 +49,13 @@ I coded 3 python files:
 
 You can either **download** each file or you can directly download the .zip with everything [**here**](https://github.com/alessio-ds/ROT-S/releases "here")
 
-## Some tests
+## Example
 
 **Encrypting 250 bytes with 'encrdecr.py':**
 
 ![](https://i.imgur.com/6IxaNN2.png)
 
-#### I also took some speed tests:
+# Speed-tests:
 
+![](https://i.imgur.com/XT1Srbe.png)
 ![](https://i.imgur.com/wkCxeh0.png)
