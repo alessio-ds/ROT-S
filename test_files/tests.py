@@ -158,10 +158,11 @@ b8=decrypt('25k_bytes.txt')
 b9=decrypt('50k_bytes.txt')
 b10=decrypt('100k_bytes.txt')
 
-print('\nDone. Check "results.txt".\n')
-with open('results.txt', mode='r') as f:
-    print(f.read())
+print('\n')
 
 testo='ENCRYPT:\n'+a1+'\n'+a2+'\n'+a3+'\n'+a4+'\n'+a5+'\n'+a6+'\n'+a7+'\n'+a8+'\n'+a9+'\n'+a10+'\n\n'+'DECRYPT:\n'+b1+'\n'+b2+'\n'+b3+'\n'+b4+'\n'+b5+'\n'+b6+'\n'+b7+'\n'+b8+'\n'+b9+'\n'+b10
+print(testo)
 with open('results.txt', mode='w') as f:
     f.write(testo)
+
+print('\nDone. Check "results.txt".\n')
